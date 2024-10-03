@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Planet Fishing Game</title>
+    
+    <!-- Link to the stylesheet -->
+    <link rel="stylesheet" href="styles.css">
+
+    <!-- Manifest for PWA installation -->
+    <link rel="manifest" href="manifest.json">
+
+    <!-- iOS Support -->
+    <link rel="apple-touch-icon" href="images/icon-192x192.png">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="apple-mobile-web-app-title" content="Planet Fishing Game">
+</head>
+<body>
+    <!-- Game Container -->
+    <div id="game-container">
+        <header>
+            <h1>Planet Fishing</h1>
+            <p>Planet: <span id="planet-name">Earth</span></p>
+        </header>
+
+        <!-- Canvas where the game will be rendered -->
+        <canvas id="game-canvas"></canvas>
+
+        <!-- Game controls -->
+        <div id="controls">
+            <button id="cast-btn">Cast Line</button>
+            <button id="reel-btn">Reel In</button>
+        </div>
+
+        <!-- Upgrades for better fishing gear -->
+        <div id="upgrade-menu">
+            <h2>Upgrade Your Gear</h2>
+            <button id="upgrade-rod">Upgrade Rod</button>
+            <button id="upgrade-bait">Upgrade Bait</button>
+        </div>
+
+        <!-- Scoreboard to display points and high scores -->
+        <div id="scoreboard">
+            <p>Score: <span id="score">0</span></p>
+            <p>High Score: <span id="high-score">0</span></p>
+        </div>
+    </div>
+
+    <!-- Link to the game logic -->
+    <script src="game.js"></script>
+</body>
+</html>
